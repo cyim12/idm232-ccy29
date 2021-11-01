@@ -84,95 +84,106 @@
     }
 
 /* CSS Stylesheet */
-
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-body {
+   }
+   body {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #1F2639;
     margin: 0.5rem;
-    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.navigation {
-    background-color: #EFF0F3;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-    padding-left: 2rem;
-    display: flex;
-    align-items: center;
-}
-
-/* .menu_icon {
-    padding-top: 20px;
-}
-
-.menuicon {
-    width: 30px;
-    height: 20px;
-} */
-
-.name {
-    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    display: inline;
-    padding-left: 1.5rem;
-    color: #1F2639;
+   }
+   a {
     text-decoration: none;
-}
-
-a.name:hover {
-    text-decoration: none;
-    color: #1F2639;
-}
-
-li {
+    cursor: pointer;
+   }
+   li {
     list-style: none;
-    display: inline-block;
-    padding: .5rem;
-}
-
-li a {
+   }
+   li a {
     color: #1F2639;
     font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
-}
-
-a {
-    cursor: pointer;
-}
-    
-a:hover {
+    }
+    a:hover {
     text-decoration: underline;
     color: #5E6782;
-}
-
-#categories {
+    }
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #EFF0F3;
+    color: #1F2639;
+    font-family: Aleo;
+   }
+   .logo {
+    font-size: 36px;
+   }
+   .name {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    display: inline;
+    padding-left: 1rem;
+    color: #1F2639;
+    text-decoration: none;
+    }
+    a.name:hover {
+        text-decoration: none;
+        color: #1F2639;
+    }
+   .nav-links a {
+    color: #1F2639;
+    font-weight: bold;
+   }
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
     color: #5E6782;
+    border-radius: 5px;
+    transition: 0.3s ease;
     text-decoration: underline;
-}
-
-input[type=text] {
-    width: 290px;
-    padding-left: 40px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url(http://christineyim.com/idm232-ccy29/images/search_icon.png);
-    background-position: 200px 9px; 
-    background-repeat: no-repeat;
-    padding: 10px 20px 10px 40px;
-    transition: width 0.4s ease-in-out;
-  }
-
-.search {
-    padding-left: 20rem;
-}
+   }
+   .menu li {
+    padding: 5px 14px;
+    margin-left: 4rem;
+   }
+   input[type=text] {
+       width: 150%;
+       padding: 12px;
+       margin: 8px;
+       border-radius: 10px;
+       border: none;
+     }
+   .submenu {
+       display: flex;
+   }
+   .submenu_item {
+       max-height: 30px;
+       padding: 8px;
+   }
+   
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+   /* CHECKBOX HACK */
+   input[type=checkbox]{
+       display: none;
+    } 
+   /*HAMBURGER MENU*/
+    .hamburger {
+       display: none;
+       font-size: 24px;
+       padding-left: 8px;
+       padding-right: 8px;
+       user-select: none;
+     }
 
 .front_image_container {
     width: 100%;
@@ -406,13 +417,11 @@ a.categorylink:hover {
     display: inline-block;
     width: 15%;
 }
-
 #divider4 {
     width: 83%;
     height: 5px;
     background-color: #5E6782;
 }
-
 .category_items_container {
     margin: 2rem;
     display: grid;
@@ -420,11 +429,43 @@ a.categorylink:hover {
     column-gap: 2rem;
     margin-bottom: 10rem;
 }
-
 p.p_bakedgoods {
     height: 100px;
     font-size: 24px;
     font-weight: bold;
+}
+
+/*Search Salads*/
+.salads_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#search_salads {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    display: inline-block;
+    width: 30%;
+}
+#divider5 {
+    width: 78%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.salad_search_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 10rem;
+}
+p.p_salad {
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2639;
 }
 
 /* Smothered Pork Chops Recipe */
@@ -435,7 +476,934 @@ p.p_bakedgoods {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.porkchops_recipe {
+    text-align: center;
+    margin: 2rem;
+}
+.recipe_description {
+    margin: 2rem;
+}
+h2.recipe_name {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+p.yield_time {
+    color: #9F1010;
+    font-size: 18px;
+    margin: 10px;
+}
+p.description {
+    width: 80%;
+    font-size: 26px;
+    font-weight: normal;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.icons {
+    margin: 5rem;
+}
 .share_icons {
-    padding: 3rem;
+    margin: 15px;
+}
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+}
+.ingredients {
+    display: inline-block;
+    margin: 0 4rem 4rem;
+}
+.directions {
+    display: inline-block;
+    margin: 0 4rem 4rem;
+}
+h2.recipe_heading {
+    font-family: Aleo, 'Trebuchet';
+    font-size: 15px;
+    text-align: left;
+}
+ul.ingred, ul.direct {
+    margin: 1rem;
+}
+ul.direct {
+    width: 90%;
+    margin-left: 2%;
+    margin-right: 20%;
+    font-size: 17px;
+}
+#step {
+    font-weight: bold;
+    padding: 8px;
+}
+
+/*Admin View Recipes*/
+.saved_recipes_heading, .my_recipes_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#saved_heading, #my_recipes_heading {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    display: inline-block;
+    width: 18%;
+}
+#divider6, #divider7 {
+    width: 80%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.saved_recipes_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+.my_recipes_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 0;
+}
+.add_recipe_button, .view_more_button {
+    margin-bottom: 8rem;
+    text-align: right;
+}
+.add_btn, .view_more_btn {
+    background-color: #9F1010;
+    color: #EFF0F3;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    margin-right: 3rem;
+}
+a.add_btn:hover {
+    color: white;
+    text-decoration: none;
+}
+a.view_more_btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*Add Recipe*/
+#add_heading {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+.recipe_body {
+    margin: 0 4rem 6rem;
+    background-color: #EFF0F3;
+    padding: 5rem;
+    border-radius: 50px;
+}
+.add_rec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+h5 {
+    margin: 1rem;
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.text {
+    max-width: 300px;
+    margin: 2rem;
+    resize: vertical;
+}
+select {
+    width: 300px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 40px;
+  }
+.upload_image {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.add_recipe_image {
+    background-color: white;
+    border-radius: 20px;
+}
+.textfield {
+    max-width: 300px;
+    margin: 2rem;
+    resize: vertical;
+    height: 300px;
+}
+.save_button {
+    margin-top: 6rem;
+    text-align: right;
+}
+.save_btn {
+    background-color: #1F2639;
+    color: #EFF0F3;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    margin-right: 2rem;
+}
+a.save_btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 1024px) {
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:#EFF0F3;
+     top: 5rem;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+    }
+    .menu li:hover {
+     display: inline-block;
+     text-decoration: underline;
+    }
+    .menu li + li {
+     margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+     display: block;
+    }
+    .hamburger {
+     display: block;
+    }
+    input[type=text] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 1px;
+     border-radius: 10px;
+     border: none;
+    }
+    .front_image_container {
+        width: 100%;
+        height: 300px;
+        background-image: url(http://christineyim.com/idm232-ccy29/images/spiced_shrimp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    img.front_image {
+        object-fit: cover;
+        align-self: center;
+    }
+    #home_categories_ap {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 10rem;
+        margin-top: 3rem;
+    }
+    #popular {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 28px;
+        display: inline-block;
+        width: 25%;
+    }
+    #autumn_picks {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 28px;
+        display: inline-block;
+        width: 55%;
+    }
+    #divider1 {
+        width: 73%;
+        height: 5px;
+        background-color: #5E6782;
+    }
+    #divider2 {
+        width: 65%;
+        height: 5px;
+        background-color: #9F1010;
+    }
+    .popular_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+    .autumnpicks_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+    .fooditem {
+        margin: 0.2rem;
+        margin-top: 2rem;
+    }
+    .food {
+        width: 100%;
+        height: 250px;
+    }
+    p {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 21px;
+        height: 30px;
+    }
+
+/* Category Listing */
+.category_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+#food_categories {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    display: inline-block;
+    width: 25%;
+}
+#divider3 {
+    width: 75%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.category_items_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 10rem;
+}
+p.p_category {
+    height: 100px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Baked Goods Category Listing */
+.bakedgoods_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+#baked_goods_category {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    display: inline-block;
+    width: 25%;
+}
+#divider4 {
+    width: 75%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.category_items_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 10rem;
+}
+p.p_bakedgoods {
+    height: 100px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Search Salad */
+.salads_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#search_salads {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    display: inline-block;
+    width: 38%;
+}
+#divider5 {
+    width: 61%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.salad_search_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+}
+p.p_salad {
+    height: 100px;
+    font-size: 21px;
+    font-weight: bold;
+}
+  
+
+    /* FOOTER */
+    .footer {
+        background-color: #1F2639;
+        width: auto;
+        padding: 3rem;
+        width: 100%;
+        display: flex;
+        padding-bottom: 6rem;
+    }
+    
+    .container {
+        width: 500px;
+    }
+    
+    #container1 {
+        padding-left: 10rem;
+    }
+    
+    #container2 {
+        padding-right: 12rem;
+    }
+    
+    h3 {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        color: #EFF0F3;
+        margin-bottom: 15px;
+    }
+    
+    a.footer_menu_item {
+        color: #EFF0F3;
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    a.connect {
+        color: #EFF0F3;
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    a.footer_menu_item:hover {
+        text-decoration: underline;
+    }
+    
+    a.connect:hover {
+        text-decoration: underline;
+    }
+    
+    .horizontal_div {
+        height: 2px;
+        width: 40%;
+        background-color: #EFF0F3;
+        margin-top: 2rem;
+    }
+    
+    h4 {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: #EFF0F3;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .social_icons {
+        width: 20px;
+        height: 20px;
+        padding-right: 1.5rem;
+    }
+
+/* Smothered Pork Chops Recipe */
+.porkchop_image_container {
+    width: 100%;
+    height: 300px;
+    background-image: url(http://christineyim.com/idm232-ccy29/images/porkchops_front_recipe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.porkchops_recipe {
+    text-align: center;
+    margin: 2rem;
+}
+.recipe_description {
+    margin: 2rem;
+}
+h2.recipe_name {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+p.yield_time {
+    color: #9F1010;
+    font-size: 14px;
+    margin: 10px;
+}
+p.description {
+    width: 85%;
+    font-size: 26px;
+    font-weight: normal;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+.icons {
+    margin: 9rem;
+}
+.share_icons {
+    margin: 15px;
+}
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    width: 95%;
+    text-align: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 0;
+}
+.ingredients {
+    display: inline-block;
+    margin: 0 2rem 2rem;
+}
+.directions {
+    display: inline-block;
+    margin: 0 2rem 2rem;
+}
+h2.recipe_heading {
+    font-family: Aleo, 'Trebuchet';
+    font-size: 13px;
+    text-align: left;
+}
+
+/*Admin View Recipes*/
+#saved_heading, #my_recipes_heading {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+    display: inline-block;
+    width: 18%;
+}
+#divider6, #divider7 {
+    width: 80%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.saved_recipes_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+.my_recipes_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 0;
+}
+
+/*Add Recipe*/
+#add_heading {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+.recipe_body {
+    margin: 0 4rem 6rem;
+    background-color: #EFF0F3;
+    padding: 5rem;
+    border-radius: 50px;
+}
+.add_rec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 5rem;
+}
+.save_button {
+    margin-top: 6rem;
+    text-align: center;
+}
+    }
+
+@media (max-width: 786px) {
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:#EFF0F3;
+        top: 5rem;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+       }
+       .menu li:hover {
+        display: inline-block;
+        text-decoration: underline;
+       }
+       .menu li + li {
+        margin-top: 12px;
+       }
+       input[type=checkbox]:checked ~ .menu{
+        display: block;
+       }
+       .hamburger {
+        display: block;
+       }
+       input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 1px;
+        border-radius: 10px;
+        border: none;
+       }
+       .front_image_container {
+           width: 100%;
+           height: 175px;
+           background-image: url(http://christineyim.com/idm232-ccy29/images/spiced_shrimp.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+       img.front_image {
+           object-fit: cover;
+           align-self: center;
+       }
+       .home_categories {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 10rem;
+    }
+    #home_heading_ap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+    #popular {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+        display: inline-block;
+        width: 20%;
+    }
+    #autumn_picks {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 24px;
+        display: inline-block;
+        width: 35%;
+    }
+    .popular_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+    .autumnpicks_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+    .fooditem {
+        margin: 0.2rem;
+        margin-top: 2rem;
+    }
+    .food {
+        width: 100%;
+        height: 300px;
+    }
+    p {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+        height: 30px;
+    }
+    /* Category Listing */
+    .category_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    }
+    #food_categories {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    width: 40%;
+    }
+    #divider3 {
+    width: 55%;
+    height: 5px;
+    background-color: #5E6782;
+    }
+    .category_items_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10rem;
+    }
+    p.p_category {
+    height: 100px;
+    font-size: 23px;
+    font-weight: bold;
+    }
+
+    /* Baked Goods Category Listing */
+.bakedgoods_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+#baked_goods_category {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    width: 40%;
+}
+#divider4 {
+    width: 55%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.category_items_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10rem;
+}
+p.p_bakedgoods {
+    height: 100px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* Search Salad */
+.salads_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+}
+#search_salads {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    display: inline-block;
+    width: 70%;
+}
+#divider5 {
+    width: 29%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.salad_search_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10rem;
+}
+p.p_salad {
+    height: 100px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+    /* FOOTER */
+    .footer {
+        background-color: #1F2639;
+        width: auto;
+        padding: 3rem;
+        width: 100%;
+        display: flex;
+        padding-bottom: 6rem;
+    }
+    .container {
+        width: 40%;
+    }
+    #container1 {
+        padding-left: 5%;
+    }
+    #container2 {
+        padding-right: 2rem;
+    }
+    h3 {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: #EFF0F3;
+    }
+    a.footer_menu_item {
+        color: #EFF0F3;
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    a.connect {
+        color: #EFF0F3;
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    a.footer_menu_item:hover {
+        text-decoration: underline;
+    }
+    a.connect:hover {
+        text-decoration: underline;
+    }
+    .horizontal_div {
+        height: 2px;
+        width: 65%;
+        background-color: #EFF0F3;
+        margin-top: 2rem;
+    }
+    h4 {
+        font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #EFF0F3;
+    }
+    .social_icons {
+        width: 3px;
+        height: 3px;
+        padding-right: 1.5rem;
+    }
+
+/* Smothered Pork Chops Recipe */
+.porkchop_image_container {
+    width: 100%;
+    height: 175px;
+    background-image: url(http://christineyim.com/idm232-ccy29/images/porkchops_front_recipe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.porkchops_recipe {
+    text-align: center;
+    margin: 2rem;
+}
+.recipe_description {
+    margin: 2rem;
+}
+h2.recipe_name {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+p.yield_time {
+    color: #9F1010;
+    font-size: 12px;
+    margin: 10px;
+}
+p.description {
+    width: 95%;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.icons {
+    margin: 8rem;
+}
+.share_icons {
+    margin: 15px;
+}
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+}
+.ingredients {
+    display: inline-block;
+    margin: 0 4rem 4rem;
+}
+.directions {
+    display: inline-block;
+    margin: 0 4rem 4rem;
+}
+
+/*Admin View Recipes*/
+#saved_heading, #my_recipes_heading {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    width: 30%;
+}
+#divider6, #divider7 {
+    width: 70%;
+    height: 5px;
+    background-color: #5E6782;
+}
+.saved_recipes_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+.my_recipes_container {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.add_recipe_button, .view_more_button {
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.add_btn, .view_more_btn {
+    background-color: #9F1010;
+    color: #EFF0F3;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    margin-right: 3rem;
+}
+a.add_btn:hover {
+    color: white;
+    text-decoration: none;
+}
+a.view_more_btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*Add Recipe*/
+#add_heading {
+    font-family: Aleo, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+.recipe_body {
+    margin: 0 3rem 6rem;
+    background-color: #EFF0F3;
+    padding: 5rem;
+    border-radius: 50px;
+}
+.add_rec {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+}
 }

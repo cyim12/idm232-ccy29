@@ -9,26 +9,34 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <div class="navigation">
-            <div class="heading_name"><h1 ><a href="http://christineyim.com/idm232-ccy29/index.html" class="name">SAVORY</a></h1></div> 
-            <div class="main_nav">
-                <ul class="menu">
-                    <li><a href="http://christineyim.com/idm232-ccy29/category_listing.html" class="menu__item">Food Categories</a></li>
-                    <li><a href="" class="menu__item">Blog</a></li>
-                    <li><a href="" class="menu__item">About Us</a></li>
-                    <li><a href="" class="menu__item">Contact Us</a></li>
-                </ul>
-            </div>
-                <div class="search">
-                    <form ><input type="text" placeholder="Type Salads" name="search"></div>
-                <div class="header_buttons">
-                    <ul class="submenu">
-                        <li><a href="" class="submenuitem"><img src="./images/create_recipe_icon.png" class="submenu_item"></a></li>
-                        <li><a href="" class="submenuitem"><img src="./images/saved_recipes_icon.png" class="submenu_item"></a></li>
-                        <li><a href="" class="submenuitem"><img src="./images/profile_icon.png" class="submenu_item"></a></li>
-                    </ul>
-        </div>
-    </div>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><h1><a href="http://christineyim.com/idm232-ccy29/index.html" class="name">SAVORY</a></h1></div> 
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+        <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="http://christineyim.com/idm232-ccy29/category_listing.html">Categories</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="search">
+          <form ><input type="text" placeholder="Type Salads" name="search"></div>
+          <a href="http://christineyim.com/idm232-ccy29/search_results.html" class="search"><img src="./images/search_icon.png" alt="search_icon" width= "30px" /></a>
+      <div class="header_buttons">
+        <ul class="submenu">
+            <li><a href="http://christineyim.com/idm232-ccy29/add_recipe.html" class="submenuitem"><img src="./images/create_recipe_icon.png" class="submenu_item"></a></li>
+            <li><a href="http://christineyim.com/idm232-ccy29/admin_view_recipe.html" class="submenuitem"><img src="./images/saved_recipes_icon.png" class="submenu_item"></a></li>
+            <li><a href="" class="submenuitem"><img src="./images/profile_icon.png" class="submenu_item"></a></li>
+          </ul>
+      </div>
+      </nav>
     <div class="front_image_container">
     </div>
     <br>
@@ -48,7 +56,7 @@
         </div>
     </div>
     <div class="home_featured">
-        <div class="home_heading">
+        <div class="home_heading" id="home_heading_ap">
             <h2 id="autumn_picks">Autumn Picks</h2><div class="divider" id="divider2"></div></div><br>
         <div class="autumnpicks_items">
             <div class="fooditem"><a href="" class="recipelink2"><img src="./images/sweet_potato_casserole_autumn1.jpg" class="food"><p>Sweet Potato Casserole</p></a></div>
@@ -98,7 +106,6 @@
                 <a href="https://pinterest.com" target="_blank" class="social_icons"><img src="./images/pinterest.png" alt="Pinterest" width= "30px" /></a>
             </div>
         </div>
-    </div>
     </div>
 </body>
 </html>
