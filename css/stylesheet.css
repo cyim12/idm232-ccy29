@@ -587,17 +587,28 @@ ul.direct {
     column-gap: 2rem;
     margin-bottom: 0;
 }
-.add_recipe_button, .view_more_button {
+.btn_primary {
     margin-bottom: 8rem;
     text-align: right;
+}
+.btn_secondary, .btn {
+    margin-bottom: 8rem;
+    text-align: center;
+    font-size: 8px;
+    background-color: #9F1010;
+    color: #EFF0F3;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    margin-right: 3rem;
+    display: inline-block;
 }
 .add_btn, .view_more_btn {
     background-color: #9F1010;
     color: #EFF0F3;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
-    padding: 0.5rem 2rem;
-    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
     margin-right: 3rem;
 }
 a.add_btn:hover {
@@ -608,6 +619,7 @@ a.view_more_btn:hover {
     color: white;
     text-decoration: none;
 }
+
 
 /*Add Recipe*/
 #add_heading {
@@ -1426,4 +1438,8 @@ a.view_more_btn:hover {
     grid-template-columns: 1fr;
     row-gap: 5rem;
 }
+}
+
+.admin_btn {
+    font-size: large;
 }

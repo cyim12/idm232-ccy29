@@ -30,10 +30,10 @@
             <div class="horizontal_div"></div>
             <div class="socials">
                 <h4>Follow Us</h4>
-                <a href="https://instagram.com" target="_blank" class="social_icons"><img src="./images/instagram.png" alt="Instagram" width= "30px" /></a>
-                <a href="https://facebook.com" target="_blank" class="social_icons"><img src="./images/facebook.png" alt="Facebook" width= "30px" /></a>
-                <a href="https://twitter.com" target="_blank" class="social_icons"><img src="./images/twitter.png" alt="Twitter" width= "30px" /></a>
-                <a href="https://pinterest.com" target="_blank" class="social_icons"><img src="./images/pinterest.png" alt="Pinterest" width= "30px" /></a>
+                <a href="https://instagram.com" target="_blank" class="social_icons"><img src="/images/instagram.png" alt="Instagram" width= "30px" /></a>
+                <a href="https://facebook.com" target="_blank" class="social_icons"><img src="/images/facebook.png" alt="Facebook" width= "30px" /></a>
+                <a href="https://twitter.com" target="_blank" class="social_icons"><img src="/images/twitter.png" alt="Twitter" width= "30px" /></a>
+                <a href="https://pinterest.com" target="_blank" class="social_icons"><img src="/images/pinterest.png" alt="Pinterest" width= "30px" /></a>
             </div>
         </div>
     </div>

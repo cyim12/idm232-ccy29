@@ -1,7 +1,7 @@
 <?php
 
-include '../includes/database.php';
-include '../includes/helper.php';
+include '../_includes/database.php';
+include '../_includes/helper.php';
 
 // Set Page Class
 if (isset($body_class)) {
@@ -36,7 +36,7 @@ if (isset($body_class)) {
           <div class="menu">
             <li><a href="http://christineyim.com/idm232-ccy29/category_listing.html">Categories</a></li>
             <li><a href="">Search</a></li>
-            <li><a href="http://christineyim.com/idm232-ccy29/admin.html">Admin</a></li>
+            <li><a href="http://christineyim.com/idm232-ccy29/admin.php">Admin</a></li>
           </div>
         </ul>
         </div>
