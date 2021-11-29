@@ -24,7 +24,7 @@ if (isset($body_class)) {
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><h1><a href="http://christineyim.com/idm232-ccy29/index.html" class="name">SAVORY</a></h1></div> 
+        <div class="logo"><h1><a href="/index.php" class="name">SAVORY</a></h1></div> 
         <!-- NAVIGATION MENU -->
         <br>
         <div class="navigation">
@@ -36,7 +36,7 @@ if (isset($body_class)) {
           <div class="menu">
             <li><a href="http://christineyim.com/idm232-ccy29/category_listing.html">Categories</a></li>
             <li><a href="">Search</a></li>
-            <li><a href="http://christineyim.com/idm232-ccy29/admin.php">Admin</a></li>
+            <li><a href="/admin.php">Admin</a></li>
           </div>
         </ul>
         </div>

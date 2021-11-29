@@ -1,6 +1,6 @@
 <?php 
 $page_title = 'Savory | Home';
-include_once 'global/header.php'; 
+include_once '_global/header.php'; 
 ?>
 
     <div class="front_image_container">
@@ -35,4 +35,4 @@ include_once 'global/header.php';
     </div>
     </div>
 
-<?php include 'global/footer.php'; ?>
+<?php include './_global/footer.php'; ?>

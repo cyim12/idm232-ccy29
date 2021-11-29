@@ -26,10 +26,10 @@
         <br>
 
         <label for="directions">Directions:</label>
-        <textarea class="add-text" name="recipeDirections" id="directionList" placeholder="Step 1:"></textarea>
+        <textarea class="add-text" name="recipeDirections" id="recipeDirections" placeholder="Step 1:"></textarea>
         <br>
 
-        <button type="submit" value="Submit" name="submit">Submit</button>
+        <button type="submit" value="Submit" name="submit" class="btn">Submit</button>
         <br>
     </form>
 

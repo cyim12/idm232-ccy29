@@ -4,11 +4,9 @@
         <th> ID </th>
         <th> Title </th>
         <th> Description </th>
-
-        <th>Title</th>
       </tr>
     </thead>
-    
+
     <tbody>
         <?php
           while ($row = mysqli_fetch_assoc($db_results)) {
