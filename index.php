@@ -1,6 +1,6 @@
 <?php 
 $page_title = 'Savory | Home';
-include_once '_global/header.php'; 
+include_once __DIR__ . '/_global/header.php';
 ?>
 
     <div class="front_image_container">
@@ -13,7 +13,7 @@ include_once '_global/header.php';
         <div class="home_heading">
             <h2 id="popular">Popular</h2><div class="divider" id="divider1"></div></div><br>
         <div class="popular_items">
-            <div class="fooditem"><a href="http://christineyim.com/idm232-ccy29/smothered_porkchops_recipe.html" class="recipelink1"><img src="./images/smothered_pork_chops_popular1.jpg" class="food"><p>Smothered Pork Chops</p></a></div>
+            <div class="fooditem"><a href="http://christineyim.com/idm232-ccy29/smothered_porkchops_recipe.php" class="recipelink1"><img src="./images/smothered_pork_chops_popular1.jpg" class="food"><p>Smothered Pork Chops</p></a></div>
             <div class="fooditem"><a href="" class="recipelink1"><img src="./images/crispy_gnocchi_popular2.jpg" class="food"><p>Crispy Gnocchi With Burst Tomatoes and Mozzarella</p></a></div>
             <div class="fooditem"><a href="" class="recipelink1"><img src="./images/lemon_chicken_breasts_popular3.jpg" class="food"><p>Weeknight Lemon Chicken Breasts with Herbs</p></a></div>
             <div class="fooditem"><a href="" class="recipelink1"><img src="./images/blackened_fish_popular4.jpg" class="food"><p>Blackened Fish With Quick Grits</p></a></div>

@@ -2,14 +2,14 @@
 $page_title = 'Savory | Update Recipe';
 $body_class = 'add_recipe';
 
-include_once '../_global/header.php';
+include_once __DIR__ . '../_global/adminheader.php';
 
 
 if (isset($_POST['update'])) {
     $recipe_id = $_POST['recipe_id'];
     // Make sure GET ID == post ID
     if ($_GET['id'] != $recipe_id) {
-        redirectTo('/admin/update_recipe.php?id=' . $_GET['id'] . '&error=User ID does not match current user.');
+        redirectTo('update_recipe.php?id=' . $_GET['id'] . '&error=User ID does not match current user.');
     }
     //  Parse Data
     $title = mysqli_real_escape_string($connection, $_POST['recipeTitle']);
@@ -28,12 +28,12 @@ if (isset($_POST['update'])) {
     // Execute Query
     $db_results = mysqli_query($connection, $sql);
 
-    if ($db_results && $db_results->num_rows > 0) {
+    if ($db_results) {
         // Success
-        redirectTo('/admin/all_recipes.php?success=');
+        redirectTo('all_recipes.php?success=');
     } else {
         // Error
-        redirectTo('/admin/all_recipes.php?id=' . $recipe_id . '&error=' . mysqli_error($connection));
+        redirectTo('all_recipes.php?id=' . $recipe_id . '&error=' . mysqli_error($connection));
     }
 } elseif (isset($_GET['id'])) {
     $recipe_id = $_GET['id'];
@@ -47,11 +47,11 @@ if (isset($_POST['update'])) {
         $user = $row = mysqli_fetch_assoc($db_results);
     } else {
         // Redirect user if ID does not have a match in the DB
-        redirectTo('/admin/all_recipes.php?error=' . mysqli_error($connection));
+        redirectTo('all_recipes.php?error=' . mysqli_error($connection));
     }
 } else {
     // Redirect user if no ID is passed in URL
-    redirectTo('/admin/all_recipes.php');
+    redirectTo('all_recipes.php');
 }
 ?>
 

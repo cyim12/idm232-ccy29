@@ -1,9 +1,9 @@
 <?php
     $page_title = 'All Recipes';
 
-    include_once '../_global/header.php';
+    include_once __DIR__ . '/../_global/adminheader.php';
 
-    $sql = 'SELECT id, Title ';
+    $sql = 'SELECT *';
     $sql .= 'FROM recipes';
     $db_results = mysqli_query($connection,$sql);
 
@@ -20,7 +20,7 @@
             echo '<p>There are currently no recipes in the database</p>';
         }
         ?>
-    <button><a href="/admin/add_recipe.php">Add Recipe</a></button>
+    <button><a href="add_recipe.php">Add Recipe</a></button>
     </div>
 </body>
 </html>

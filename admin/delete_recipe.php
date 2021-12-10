@@ -1,7 +1,7 @@
 <?php
 $page_title = 'Delete Recipe';
 $body_class = 'add_recipe';
-include_once '../_global/header.php';
+include_once __DIR__ . '../_global/adminheader.php';
 
 if(isset($_GET['id'])){
     $recipe_id = $_GET['id'];

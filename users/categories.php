@@ -1,7 +1,7 @@
 <?php 
 $page_title = 'Savory | Categories';
 ?>
-<?php include_once '../global/header.php'; ?>
+<?php include_once __DIR__ . '../global/header.php'; ?>
 
     <div class="category_heading">
         <h2 id="food_categories">Food Categories</h2><div class="divider" id="divider3"></div></div><br>

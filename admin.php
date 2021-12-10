@@ -1,6 +1,6 @@
 <?php 
     $page_title = 'Savory | Admin';
-    include_once './_global/header.php'; 
+    include_once __DIR__ . '/_global/header.php'; 
 ?>
 
 <html>
@@ -17,12 +17,12 @@
         </div>
         
         <div class="add_recipe_button">
-          <a href="/admin/add_recipe.php" class="add_btn">Create Recipe</a>
+          <a href="admin/add_recipe.php" class="add_btn">Create Recipe</a>
         </div>
         <br>
         <br>
         <div class="add_recipe_button">
-          <a href="/admin/all_recipes.php" class="add_btn">View All Recipes</a>
+          <a href="admin/all_recipes.php" class="add_btn">View All Recipes</a>
         </div>
   </div>
     <div class="saved_recipes">
@@ -41,5 +41,5 @@
 </html>
 
 <?php
-    include_once './_global/footer.php';
+    include_once __DIR__ . './_global/footer.php';
 ?>
